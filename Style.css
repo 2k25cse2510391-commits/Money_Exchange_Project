@@ -1,0 +1,195 @@
+/* Import bold display and clean sans-serif fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,900;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Feastables-inspired vibrant split background */
+    background: linear-gradient(
+        180deg, 
+        #66e3ff 0%, 
+        #66e3ff 18%, 
+        #000000 18%, 
+        #000000 18.8%, 
+        #ff5e6c 18.8%, 
+        #ff5e6c 68%, 
+        #000000 68%, 
+        #000000 68.8%, 
+        #0088ff 68.8%, 
+        #0088ff 100%
+    );
+    padding: 20px;
+}
+
+/* Main Card Container */
+.container {
+    background-color: #ffffff;
+    padding: 2.2rem 2rem;
+    border-radius: 12px;
+    border: 4px solid #000000;
+    /* Signature Neobrutalist hard black shadow */
+    box-shadow: 8px 8px 0px #000000;
+    width: 100%;
+    max-width: 420px;
+}
+
+/* Title Styling (Black slanted banner look) */
+#H2 {
+    font-size: 1.7rem;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 12px 16px;
+    margin-bottom: 1.8rem;
+    transform: rotate(-1.5deg);
+    letter-spacing: 1px;
+    box-shadow: 4px 4px 0px #66e3ff;
+}
+
+/* Reset in case </h2> wasn't closed in HTML */
+form {
+    font-size: 1rem;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Labels ("Enter the amount", "From-", "To-") */
+form p {
+    font-size: 0.9rem;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+/* Amount Input Box */
+form input {
+    width: 100%;
+    border: 3px solid #000000;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    height: 3.2rem;
+    padding: 0 1rem;
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 4px 4px 0px #000000;
+    outline: none;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+}
+
+form input:focus {
+    background-color: #f4ffeb;
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px #000000;
+}
+
+/* From / To Section Layout */
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.from, .to {
+    flex: 1;
+}
+
+/* Flag + Select Box Wrapper */
+.select-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #66e3ff; /* Feastables Navbar Cyan */
+    border: 3px solid #000000;
+    border-radius: 8px;
+    padding: 0.35rem 0.6rem;
+    box-shadow: 4px 4px 0px #000000;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.select-container:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 5px 5px 0px #000000;
+}
+
+.select-container img {
+    max-width: 2.2rem;
+    margin-right: 0.4rem;
+    filter: drop-shadow(1px 1px 0px #000000);
+}
+
+.select-container select {
+    font-size: 1rem;
+    font-weight: 900;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #000000;
+    width: 100%;
+}
+
+/* Exchange Rate Message Box */
+.msg {
+    margin: 1.8rem 0;
+    padding: 0.9rem;
+    background-color: #ff5e6c; /* Feastables Coral Pink */
+    color: #ffffff;
+    border: 3px solid #000000;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    /* Crisp black text outline effect */
+    text-shadow: 2px 2px 0px #000000;
+    box-shadow: 4px 4px 0px #000000;
+}
+
+/* "Get Exchange rate" Button (Matches "FIND A STORE" button) */
+form button {
+    width: 100%;
+    height: 3.5rem;
+    background-color: #b8ff01; /* Feastables Neon Lime Green */
+    color: #000000;
+    border: 3px solid #000000;
+    border-radius: 8px;
+    font-size: 1.15rem;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+    box-shadow: 5px 5px 0px #000000;
+    transition: all 0.1s ease;
+}
+
+form button:hover {
+    background-color: #c9ff3b;
+    transform: translate(-2px, -2px);
+    box-shadow: 7px 7px 0px #000000;
+}
+
+form button:active {
+    transform: translate(3px, 3px);
+    box-shadow: 2px 2px 0px #000000;
+}
